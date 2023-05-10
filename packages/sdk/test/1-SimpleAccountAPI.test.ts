@@ -53,7 +53,8 @@ describe('SimpleAccountAPI', () => {
       maxFeePerGas: 8,
       maxPriorityFeePerGas: 9,
       paymasterAndData: '0xaaaaaa',
-      signature: '0xbbbb'
+      signature: '0xbbbb',
+      fidoPubKey: '0xcccc',
     }
     const hash = await api.getUserOpHash(userOp)
     const epHash = await entryPoint.getUserOpHash(userOp)

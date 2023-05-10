@@ -6,7 +6,7 @@ import fs from 'fs'
 
 import { HardhatUserConfig } from 'hardhat/config'
 import { NetworkUserConfig } from 'hardhat/src/types/config'
-
+const { API_URL, PRIVATE_KEY } = process.env;
 const mnemonicFileName = process.env.MNEMONIC_FILE
 let mnemonic = 'test '.repeat(11) + 'junk'
 if (mnemonicFileName != null && fs.existsSync(mnemonicFileName)) {

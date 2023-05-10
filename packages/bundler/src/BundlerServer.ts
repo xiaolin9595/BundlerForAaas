@@ -69,7 +69,8 @@ export class BundlerServer {
       callGasLimit: 0,
       maxFeePerGas: 0,
       maxPriorityFeePerGas: 0,
-      signature: '0x'
+      signature: '0x',
+      fidoPubKey: '0x'
     }
     // await EntryPoint__factory.connect(this.config.entryPoint,this.provider).callStatic.addStake(0)
     const err = await EntryPoint__factory.connect(this.config.entryPoint, this.provider).callStatic.simulateValidation(emptyUserOp)

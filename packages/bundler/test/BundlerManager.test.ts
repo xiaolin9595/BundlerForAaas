@@ -59,7 +59,8 @@ describe('#BundlerManager', () => {
       verificationGasLimit: 7,
       maxFeePerGas: 8,
       maxPriorityFeePerGas: 9,
-      preVerificationGas: 10
+      preVerificationGas: 10,
+      fidoPubKey: '0x11'
     }
 
     const hash = await entryPoint.getUserOpHash(userOp)
